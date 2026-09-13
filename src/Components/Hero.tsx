@@ -6,10 +6,10 @@ const Hero = () => {
     <section className="bg-white py-16 lg:py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Main Flex Wrapper */}
+  
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           
-          {/* Left Content (Element 1) */}
+    
           <div className="w-full md:w-1/2 space-y-6 text-left">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
               Build Your Ideal <br />
