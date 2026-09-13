@@ -1,32 +1,51 @@
-# React + TypeScript + Vite
+# 🚀 DevStack - Interactive Technology Stack Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**DevStack** is a modern, responsive web application built for developers to explore, select, and organize their personal tech stack for projects. Built with **React**, **TypeScript**, and **Tailwind CSS**, it features real-time stack updates, interactive toast notifications, dynamic category filtering, and clean UI components.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- 🛠️ **Interactive Stack Builder**: Seamlessly add technologies to your personal stack sidebar.
+- 🔔 **Custom Toast Notifications**: Instant visual feedback when adding, attempting duplicates, or removing technologies.
+- 🚫 **Duplicate Prevention**: Alert and warning toast system to prevent duplicate tech entries.
+- 🗑️ **Single & Bulk Removal**: Remove items individually or clear your entire stack with one click.
+- 🏷️ **Rich Metadata**: Cards display category chips, difficulty ratings, star ratings, and popular badges.
+- 📱 **Fully Responsive Layout**: Mobile-first design that scales beautifully from mobile to desktop.
+- ⚡ **Type-Safe Architecture**: Built using TypeScript with strictly typed data interfaces.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- **Frontend Library:** React.js
+- **Language:** TypeScript
+- **Styling Framework:** Tailwind CSS
+- **Icons & Graphics:** Devicons CDN
+- **Build Tool:** Vite
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+---
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## 📂 Project Structure
+
+```text
+Dev-Stack/
+├── public/
+│   ├── favicon.svg
+│   └── icons.svg
+├── src/
+│   ├── Components/
+│   │   ├── Footer.tsx        # Footer component with links & copyright
+│   │   ├── Hero.tsx          # Hero section component
+│   │   ├── Navbar.tsx        # Responsive navigation bar
+│   │   └── TechStack.tsx     # Main stack builder & toast system component
+│   ├── App.css
+│   ├── App.tsx               # Main application component
+│   ├── data.ts               # Technology data store
+│   ├── index.css             # Tailwind & base CSS styles
+│   ├── main.tsx              # Application entry point
+│   └── types.ts              # TypeScript interfaces and types
+├── index.html
+├── package.json
+├── tsconfig.json             # TypeScript configuration
+└── README.md
