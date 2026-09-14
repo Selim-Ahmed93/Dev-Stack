@@ -1,7 +1,5 @@
 import Logo from "../assets/logo-text.png";
 
-import React from 'react'
-
 const Navbar = () => {
 
   return (

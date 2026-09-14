@@ -47,7 +47,7 @@ const TechStack: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-8 relative">
       
-      {/* 🟢 Toast Notification Card */}
+      {/*Toast Notification Card */}
       {toast && (
         <div className="fixed top-6 right-6 z-50 flex items-center gap-3 bg-white border border-emerald-200 border-l-4 border-l-emerald-500 shadow-xl rounded-xl px-4 py-3 min-w-[280px] transition-all animate-fade-in">
           <div
@@ -72,11 +72,11 @@ const TechStack: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         {/* Left Side: Technology Cards */}
         <div className="lg:col-span-3">
-          <h2 className="text-2xl font-bold text-slate-800 mb-6">
-            Technology Cards
+          <h2 className="text-3xl font-bold">
+            Explore The <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">Technology</span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
             {technologies.map((tech) => {
               const isAdded = stack.some((item) => item.id === tech.id);
 
